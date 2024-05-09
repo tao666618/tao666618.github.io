@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+</head>
+
+<body>
+    <div align="center">
+        <h1>用户登录</h1>
+        用户名：<input name="userName" type="text" id="userName"><br>
+        密码：<input name="password" type="password" id="password"><br>
+        <input type="button" value="登录" onclick="login()">
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        function login() {
+            console.log("登录");
+            $.ajax({  // ajax 发送请求
+                url: "http://localhost:8080/user/login",   // 请求路径
+                type: "post",         // 请求类型
+                data: {               // 传递的参数
+                    "userName": $("#userName").val(),
+                    "PassWord": $("#password").val()
+                },
+                success: function (result) {    // 如果响应成功了(有响应)，则执行此回调函数  result 表示后端返回的结果
+                    if (result.code == 1) {
+                        alert(result.msg);
+                        location.href = "01.html";
+                        // location.assign();
+                    } else {
+                        alert(result.msg);    // 弹框
+                    }
+                }
+            });
+        }
+
+    </script>
+</body>
+
+</html>
