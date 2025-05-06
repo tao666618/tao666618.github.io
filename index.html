@@ -1,211 +1,199 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Tao's Blog</title><meta name="author" content="Tao"><meta name="copyright" content="Tao"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
-<meta property="og:title" content="Tao&#39;s Blog">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Tao&#39;s Blog">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://avatars.githubusercontent.com/u/114122993?v=4">
-<meta property="article:author" content="Tao">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://avatars.githubusercontent.com/u/114122993?v=4"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
-  copy: {
-    success: '复制成功',
-    error: '复制错误',
-    noSupport: '浏览器不支持'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '',
-  dateSuffix: {
-    just: '刚刚',
-    min: '分钟前',
-    hour: '小时前',
-    day: '天前',
-    month: '个月前'
-  },
-  copyright: undefined,
-  lightbox: 'fancybox',
-  Snackbar: undefined,
-  infinitegrid: {
-    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
-    buttonText: '加载更多'
-  },
-  isPhotoFigcaption: false,
-  islazyload: false,
-  isAnchor: true,
-  percent: {
-    toc: true,
-    rightside: false,
-  },
-  autoDarkmode: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: 'Tao\'s Blog',
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2024-08-02 11:03:06'
-}</script><script>(win=>{
-      win.saveToLocal = {
-        set: (key, value, ttl) => {
-          if (ttl === 0) return
-          const now = Date.now()
-          const expiry = now + ttl * 86400000
-          const item = {
-            value,
-            expiry
-          }
-          localStorage.setItem(key, JSON.stringify(item))
-        },
-      
-        get: key => {
-          const itemStr = localStorage.getItem(key)
-      
-          if (!itemStr) {
-            return undefined
-          }
-          const item = JSON.parse(itemStr)
-          const now = Date.now()
-      
-          if (now > item.expiry) {
-            localStorage.removeItem(key)
-            return undefined
-          }
-          return item.value
-        }
-      }
-    
-      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
-        const script = document.createElement('script')
-        script.src = url
-        script.async = true
-        script.onerror = reject
-        script.onload = script.onreadystatechange = function() {
-          const loadState = this.readyState
-          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-          script.onload = script.onreadystatechange = null
-          resolve()
-        }
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/><meta name="theme-color" content="#3b3e43"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black"><meta name="format-detection" content="telephone=no"/><title>Tao 的个人博客</title><meta name="description" content="A small and beautiful blogging system. 一款小而美的博客系统。"/><meta property="og:description" content="A small and beautiful blogging system. 一款小而美的博客系统。"/>    <meta name="keywords" content="Java,博客,开源"/><link rel="dns-prefetch" href="https://tao666618.github.io"/><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"/><link rel="preconnect" href="https://tao666618.github.io"><link rel="icon" type="image/png" href="https://b3log.org/images/brand/solo-128.png"/><link rel="apple-touch-icon" href="https://b3log.org/images/brand/solo-128.png"><link rel="shortcut icon" type="image/x-icon" href="https://b3log.org/images/brand/solo-128.png"><meta name="copyright" content="B3log"/><meta http-equiv="Window-target" content="_top"/><meta property="og:locale" content="zh_CN"/><meta property="og:title" content="Tao 的个人博客"/><meta property="og:site_name" content="Tao 的个人博客"/><meta property="og:url"      content="https://tao666618.github.io/index.html?"/><meta property="og:image" content="https://b3log.org/images/brand/solo-128.png"/><link rel="search" type="application/opensearchdescription+xml" title="Tao 的个人博客" href="/opensearch.xml"><link href="https://tao666618.github.io/rss.xml" title="RSS" type="application/rss+xml" rel="alternate"/><link rel="manifest" href="https://tao666618.github.io/manifest.json">            <link rel="canonical" href="https://tao666618.github.io/index.html">            <link rel="stylesheet" href="https://tao666618.github.io/skins/favourite/css/base.css?1746519456233"/>
+    <script src="https://tao666618.github.io/js/lib/vditor/dist/js/icons/ant.js?v=3.9.7" async="" id="vditorIconScript"></script>    </head>
+    <body>
+        
+<div class="top">
+    <div id="navigation">
+        <a rel="nofollow" href="https://tao666618.github.io" class="home">首页</a>
+        <a href="https://tao666618.github.io/tags.html" class="about">标签墙</a>
+        <a rel="alternate" href="https://tao666618.github.io/rss.xml" class="classifiche">RSS</a>
+    </div>
+    <div class="thinks"></div>
+</div>        <div class="wrapper">
+            <div class="content">
+<div class="header">
+    <h1 class="title">
+        <a href="https://tao666618.github.io" id="logoTitle" >
+            Tao 的个人博客
+        </a>
+    </h1>
+    <span class="sub-title">记录精彩的程序人生</span>
+</div>                <div class="roundtop"></div>
+                <div class="body">
+                    <div class="left main">
+<div class="article">
+    <h2 class="article-title">
+        <a rel="bookmark" class="no-underline" href="https://tao666618.github.io/hello-solo">
+            世界，你好！
+        </a>
+    </h2>
+    <div class="posttime-blue">
+        <div class="posttime-MY">
+            2025-05
+        </div>
+        <div class="posttime-D">
+            06
+        </div>
+    </div>
+    <div class="article-abstract">
+        <div class="note">
+            <div class="corner"></div>
+            <div class="substance vditor-reset">
+                <p><img src="https://b3logfile.com/bing/20241015.jpg?imageView2/1/w/1280/h/720/interlace/1/q/100" alt=""></p>
+<p>Solo 博客系统已经初始化完毕，可在管理后台 - 工具 - 偏好设定中调整更多细节设置。如果需要导入已有博客文章，请参考文档 <a href="https://ld246.com/article/1498490209748" target="_blank">Solo 支持 Hexo/Jekyll 数据导入</a>。</p>
+<p>对了，出于安全考虑请尽快完成如下操作：</p>
+<ol>
+<li>登录链滴社区后，在<a href="https://ld246.com/settings/b3" target="_blank">个人设置 - B3</a> 中更新 B3 Key</li>
+<li>在 Solo 管理后台 - 工具 - 用户管理中也进行同样的 B3 Key 更新</li>
+</ol>
+<p>另外，如果你需要开启评论系统，请参考 <a href="https://ld246.com/article/1594988019287" target="_blank">Solo 集成 Gitalk 评论系统</a>。</p>
+<p>最后，如果你觉得 Solo 很赞的话，请到<a href="https://github.com/88250/solo" target="_blank">项目主页</a> Watch、Star、Fork 三连 😍</p>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+    <div class="margin25">
+        <a rel="nofollow" href="https://tao666618.github.io/hello-solo" class="left">
+            <span class="left article-browserIcon" title="浏览"></span>
+            <span class="count"><span data-uvstaturl="https://tao666618.github.io/hello-solo">0</span></span>
+        </a>
+        <div class="left">
+            <span class="tagsIcon" title="标签"></span>
+            <span class="count">
+                <a rel="tag" href="https://tao666618.github.io/tags/Solo">
+                    Solo</a>
+            </span>
+        </div>
+        <a rel="nofollow" href="https://tao666618.github.io/hello-solo#b3logsolocomments" class="left">
+            <span class="left articles-commentIcon" title="评论"></span>
+            <span class="count" data-uvstatcmt="1746520677962">0</span>
+        </a>
+        <div class="right more">
+            <a href="https://tao666618.github.io/hello-solo" class="right">
+                阅读更多»
+            </a>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">
+        <div class="clear"></div>
+    </div>
+</div>
+<div class="pagination">
+    <a href="https://tao666618.github.io/p/1" class="selected">1</a>
+    &nbsp;&nbsp;共 1 页
+</div>
+                    </div>
+                    <div class="right">
+<div id="sideNavi" class="side-navi">
+    <div class="rings"></div>
+    <div class="null"></div>
+    <div class="item">
+        <div class="antefatto">
+            <h4>公告</h4>
+        </div>
+        <div class="marginLeft12 marginTop12">
+            Open Source, Open Mind, <br/>Open Sight, Open Future!
 
-        Object.keys(attr).forEach(key => {
-          script.setAttribute(key, attr[key])
-        })
+<!-- 公告栏可使用 HTML、JavaScript，比如可以在此加入第三方统计 js -->
+            <div class="marginTop12">
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
 
-        document.head.appendChild(script)
-      })
-    
-      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
-        const link = document.createElement('link')
-        link.rel = 'stylesheet'
-        link.href = url
-        if (id) link.id = id
-        link.onerror = reject
-        link.onload = link.onreadystatechange = function() {
-          const loadState = this.readyState
-          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-          link.onload = link.onreadystatechange = null
-          resolve()
-        }
-        document.head.appendChild(link)
-      })
-    
-      win.activateDarkMode = () => {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = () => {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
-    
-        if (t === 'dark') activateDarkMode()
-        else if (t === 'light') activateLightMode()
-      
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
-    
-      const detectApple = () => {
-        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-          document.documentElement.classList.add('apple')
-        }
-      }
-      detectApple()
-    })(window)</script><!-- hexo injector head_end start --><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.css"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://avatars.githubusercontent.com/u/114122993?v=4" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Tao's Blog"><span class="site-name">Tao's Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Tao's Blog</h1><div id="site_social_icons"><a class="social-icon" href="https://github.com/tao666618" target="_blank" title=""><i class="fab fa-github"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/posts/2b2e8e3c.html" title="如何搭建个人博客"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何搭建个人博客"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/2b2e8e3c.html" title="如何搭建个人博客">如何搭建个人博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-13T17:16:43.000Z" title="发表于 2024-07-14 01:16:43">2024-07-14</time></span></div><div class="content">序言之前好长时间都想着搭建一个自己的博客，但是一直没有行动，直到最近才开始着手搭建，这篇博客主要记录的我搭建这个博客的过程。从开始到结束也就用了大概4个小时，中间踩了各种的坑
-需要准备的材料
-一个github账号
-webstorm
-git
-科学上网工具
-尽量会一些Markdown语法
-博客搭建使用的框架是hexo
-node.js
-一点耐心
 
-开始安装各种的工具下载安装node.js下载地址
-下载安装git下载地址
-安装hexo命令行界面输入下面代码就行，可能会出现网络问题 ， 自行上网搜索解决
-1npm install -g hexo-cli
-下载好后 ，本地就有hexo环境
-初始化在本地新建一个文件夹，然后在文件夹里面打开cmd
-回车 就能打开命令号界面输入
-1hexo init &lt;你想要新建的目录名&gt;
+        <div class="item">
+            <div class="tags">
+                <h4>标签</h4>
+            </div>
+            <ul>
+                <li>
+                    <a rel="alternate" href="https://tao666618.github.io/tags/Solo" class="no-underline">
+                    </a>
+                    <a rel="tag" title="Solo" href="https://tao666618.github.io/tags/Solo">
+                        Solo(1)
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="line"></div>
 
-有可能会遇见网络问题 ， 自行解决
-后面会多出来这些文件
-简单介绍下hexo的文件结构：
 
-public 最终所见网页的所有内容
-node_modules 插件以及hexo所需node.js模块
-_config.yml 站点配置文件，设定一些公开信息等
-package. ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/posts/4a17b156.html" title="Hello World"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/4a17b156.html" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-07-14T07:15:59.429Z" title="发表于 2024-07-14 15:15:59">2024-07-14</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
+        <div class="item">
+            <div class="archivio">
+                <h4><a href="https://tao666618.github.io/archives.html">存档</a></h4>
+            </div>
+            <ul id="save">
+                    <li>
+                        <a href="https://tao666618.github.io/archives/2025/05"
+                           title="2025 年 05 月(1)">
+                            2025 年 05 月</a>(1)
+                    </li>
+            </ul>
+        </div>
+        <div class="line"></div>
+    <div class="rings" style="bottom: 0px;"></div>
+</div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="roundbottom"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-icon"><div class="left" id="statistic">
+    <span>
+        浏览数：
+        <span class='error-msg'>
+            <span data-uvstaturl="https://tao666618.github.io">0</span>
+        </span>
+        &nbsp;&nbsp;
+    </span>
+    <span>
+        文章总数：
+        <span class='error-msg'>
+            1
+        </span>
+        &nbsp;&nbsp;
+    </span>
+</div>
+<div class="clear"></div>
+</div>
+<div class="info">
+    <div class="copyright">
+        <br>
+        <span>&copy; 2025</span> <a href="https://tao666618.github.io">Tao 的个人博客</a> 
+    </div>
+    <div class="right goTop">
+        <span onclick="Util.goTop();">顶部</span>
+    </div>
+</div>
+<script>
+  var Label = {
+    speech: true,
+    servePath: "https://tao666618.github.io",
+    staticServePath: "https://tao666618.github.io",
+    luteAvailable: false,
+    hljsStyle: 'github',
+    langLabel: "zh_CN",
+    version: "4.4.0",
+    staticSite: true,
+    showCodeBlockLn: false,
+  }
+</script>
+<script type="text/javascript" src="https://tao666618.github.io/js/common.min.js?1746519456233" charset="utf-8"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        Util.setTopBar()
+    });
+</script>
 
-More info: Writing
-Run server1$ hexo server
+        </div>
+    </body>
+</html>
 
-More info: Server
-Generate static files1$ hexo generate
-
-More info: Generating
-Deploy to remote sites1$ hexo deploy
-
-More info: Deployment
-</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/posts/74e7ad48.html" title="clash verge 全局代理规则配置"><img class="post-bg" src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="clash verge 全局代理规则配置"></a></div><div class="recent-post-info"><a class="article-title" href="/posts/74e7ad48.html" title="clash verge 全局代理规则配置">clash verge 全局代理规则配置</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2024-08-01T16:00:00.000Z" title="发表于 2024-08-02 00:00:00">2024-08-02</time></span></div><div class="content">clash verge全局代理设置参考
-123456url: https://lainbo.com/article/clash-config#0dfcc2905b194352ab39e827f43b0e77title: &quot;Clash Verge系列使用最佳实践 | Lainbo&#x27;s Blog&quot;description: &quot;并不是懂技术的人的最优解，但是如果你懒得研究这些，那么直接照抄可以给你一个相对优质的体验~&quot;host: lainbo.comfavicon: https://lainbo.com/favicon.svgimage: https://www.notion.so/images/page-cover/nasa_earth_grid.jpg
-
-直接使用他的个人感觉比较好
-手动设置路由规则使用的各个属性含义
-DOMAIN  匹配完整域名
-GEOIP 匹配 IP 所属国家代码 
-MATCH 匹配所有请求
-DIRECT 直连 ， 数据直接出去 ， 不经过代理
-REJECT 拒绝，拦截数据请求
-
-设置规则集123456789101112 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://avatars.githubusercontent.com/u/114122993?v=4" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Tao</div><div class="author-info__description">This is my Blog</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/Tao666618"><i class="https://avatars.githubusercontent.com/u/114122993?v=4"></i><span>我的Github主页</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/tao666618" target="_blank" title=""><i class="fab fa-github"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">我的个人博客，用来记录学习的主要知识点</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/posts/74e7ad48.html" title="clash verge 全局代理规则配置"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="clash verge 全局代理规则配置"/></a><div class="content"><a class="title" href="/posts/74e7ad48.html" title="clash verge 全局代理规则配置">clash verge 全局代理规则配置</a><time datetime="2024-08-01T16:00:00.000Z" title="发表于 2024-08-02 00:00:00">2024-08-02</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/4a17b156.html" title="Hello World"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/posts/4a17b156.html" title="Hello World">Hello World</a><time datetime="2024-07-14T07:15:59.429Z" title="发表于 2024-07-14 15:15:59">2024-07-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/posts/2b2e8e3c.html" title="如何搭建个人博客"><img src="https://i.loli.net/2020/05/01/gkihqEjXxJ5UZ1C.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="如何搭建个人博客"/></a><div class="content"><a class="title" href="/posts/2b2e8e3c.html" title="如何搭建个人博客">如何搭建个人博客</a><time datetime="2024-07-13T17:16:43.000Z" title="发表于 2024-07-14 01:16:43">2024-07-14</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/08/"><span class="card-archive-list-date">八月 2024</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/07/"><span class="card-archive-list-date">七月 2024</span><span class="card-archive-list-count">2</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-08-02T03:03:06.898Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Tao</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div><!-- hexo injector body_end start --><script data-pjax>function electric_clock_injector_config(){
-                var parent_div_git = document.getElementsByClassName('sticky_layout')[0];
-                var item_html = '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/Zfour/Butterfly-clock/clock/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>';
-                console.log('已挂载electric_clock')
-                // parent_div_git.innerHTML=item_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
-                parent_div_git.insertAdjacentHTML("afterbegin",item_html) // 有报错，但不影响使用(支持pjax跳转)
-            }if( document.getElementsByClassName('sticky_layout')[0] && (location.pathname ==='all'|| 'all' ==='all')){
-
-            electric_clock_injector_config()
-        } </script><script src="https://pv.sohu.com/cityjson?ie=utf-8"></script><script data-pjax  src="https://cdn.jsdelivr.net/gh/Zfour/hexo-electric-clock@1.0.6/clock.js"></script><!-- hexo injector body_end end --></body></html>
+<!-- Generated by Latke (https://github.com/88250/latke) in 2ms, 2025/05/06 16:41:01 -->
