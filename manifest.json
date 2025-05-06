@@ -6,7 +6,7 @@
     "name": "Tao 的个人博客",
     "start_url": ".",
     "description": "记录精彩的程序人生",
-    "short_name": "Tao 的个人博客",
+    "short_name": "${shortName}",
     "icons": [
         {
             "sizes": "48x48",
